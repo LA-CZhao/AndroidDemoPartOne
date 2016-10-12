@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#adadad">
+
+
+    <ImageView
+        android:id="@+id/iv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <com.example.idea.androiddemopartone.view.ClockProgressView
+        android:id="@+id/cpv_clock"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <SeekBar
+        android:id="@+id/sb_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cpv_clock"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"/>
+
+    <com.example.idea.androiddemopartone.view.rangebar.RangeBar
+        android:id="@+id/rb_rangebar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/sb_seekbar"
+        android:layout_margin="15dp"/>
+    
+    <com.example.idea.androiddemopartone.view.ThreeDProgressbar
+        android:id="@+id/tdp_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:visibility="gone"
+        ></com.example.idea.androiddemopartone.view.ThreeDProgressbar>
+
+
+    <com.example.idea.androiddemopartone.view.CircleSeekBar
+        android:id="@+id/csb_volumebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        ></com.example.idea.androiddemopartone.view.CircleSeekBar>
+
+    <com.example.idea.androiddemopartone.view.SymmetrySeekBar
+        android:id="@+id/ssb_symmetry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="80dp">
+
+    </com.example.idea.androiddemopartone.view.SymmetrySeekBar>
+
+    <com.example.idea.androiddemopartone.view.VerticalTextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#0b86e5"
+        app:text="Sandwiches"
+        app:textColorOther="#333333"
+        app:textSize="17dp"
+        app:direction="uptodown"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="12:00"/>
+
+</RelativeLayout>
